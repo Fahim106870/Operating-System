@@ -1,0 +1,2 @@
+rm file_name  # Delete a file  
+rm -r directory_name  # Delete a directory and its contents
