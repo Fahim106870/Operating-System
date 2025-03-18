@@ -1,0 +1,19 @@
+sudo apt update 			-- install cups
+sudo apt install cups
+sudo dnf install cups
+sudo systemctl start cups 		--start cups
+sudo systemctl enable cups 		--enable cups
+http://localhost:631 			--addd printer cups
+
+
+sudo lpadmin -p Printer_Name -E -v uri -m model 		--add printer(sudo lpadmin -p HP_LaserJet -E -v 										usb://HP/LaserJet -m everywhere
+										)
+
+sudo lpoptions -d Printer_Name					-- make printer default
+
+
+
+lpstat -p							-- test printer
+sudo lpadmin -p Printer_Name -L "Location of Printer" -E	--This will list all printers and their status. To 									print a test page
+lp -d Printer_Name /etc/printcap
+lp -d Printer_Name /path/to/file				-- print documents directly from the terminal
