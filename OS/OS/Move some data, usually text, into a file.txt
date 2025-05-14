@@ -1,0 +1,2 @@
+echo "Some text" > file_name  # Overwrite  
+echo "Some text" >> file_name  # Append

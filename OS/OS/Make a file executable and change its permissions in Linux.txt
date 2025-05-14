@@ -1,0 +1,2 @@
+chmod +x file_name  # Make executable  
+chmod 755 file_name  # Set specific permissions
